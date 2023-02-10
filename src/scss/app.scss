@@ -1,0 +1,124 @@
+.App {
+  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.heart {
+  color: #ff0000;
+}
+
+.small {
+  font-size: 0.75rem;
+}
+
+ul, ol, li {
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.nav {
+  background: #252627;
+  padding: 40px 0;
+}
+
+.nav-row {
+  align-items: center;
+}
+
+.header-logo {
+  width: 200px;
+}
+
+.menu {
+  margin-left: auto !important;
+}
+
+.menu__item {
+  margin-left: 40px !important;
+}
+
+.menu__link:hover {
+  padding: 8px !important;
+  padding-top: 4px !important;
+  background: #fff;
+  color: #000;
+  transition: ease 0.4s;
+  border-radius: 10px;
+}
+
+.menu__item::first-child {
+  margin-left: 0px !important;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 27px;
+}
+
+.promo {
+  background: #e8e8e8 url('assets/Graphite-0017960-11.png') calc(100vw - 800px) center no-repeat;
+}
+
+.promo__title {
+  font-size: 109px;
+  font-weight: 700;
+  color: #000;
+  margin-top: 208px;
+  margin-bottom: 35px;
+}
+
+.promo__text {
+  font-size: 49px;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 55px;
+}
+
+.promo__links {
+  background: #e1e2e2;
+  width: 180px;
+  padding: 13px 0 !important;
+  border-radius: 10px;
+  margin-bottom: 170px !important;
+}
+
+.promo__item {
+  display: block;
+  padding: 3px 4px 4px 5px !important;
+  border: 2px solid black;
+  margin-left: 20px !important;
+}
+.promo__link {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.promo__link svg {
+  width: 20px;
+}
+
+.promo__link_facebook:hover {
+  
+}
