@@ -1,6 +1,8 @@
 import Logo from '../assets/logo.png';
 
 function Header() {
+    const navigation = [{section: 'Новости', link: '#news'}, {section: 'Миссия и цели', link: '#about'}, {section: 'Преимущества', link: '#advantages'}, {section: 'Скачать', link: '#download'}, {section: 'Контакты', link: '#contacts'}];
+
     return (
         <header className="header">
         <div className="nav">
@@ -11,11 +13,9 @@ function Header() {
                     </div>
                     <div className="col-9">
                         <ul className="menu d-flex">
-                            <li className="menu__item"><a href="#news" className="menu__link">Новости</a></li>
-                            <li className="menu__item"><a href="#about" className="menu__link">Миссия и цели</a></li>
-                            <li className="menu__item"><a href="#advantages" className="menu__link">Преимущества</a></li>
-                            <li className="menu__item"><a href="#download" className="menu__link">Скачать</a></li>
-                            <li className="menu__item"><a href="#contacts" className="menu__link">Контакты</a></li>
+                            {navigation.map((obj) => (
+                                <li key={obj.link} className="menu__item"><a href={obj.link} className="menu__link">{obj.section}</a></li>
+                            ))}
                         </ul>
                     </div>
                 </div>

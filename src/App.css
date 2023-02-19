@@ -110,7 +110,14 @@ ul, ol, li {
   padding: 3px 4px 4px 5px !important;
   border: 2px solid black;
   margin-left: 20px !important;
+  cursor: pointer;
 }
+
+.promo__item:hover {
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s;
+}
+
 .promo__link {
   display: block;
   padding: 0;
@@ -266,4 +273,150 @@ ul, ol, li {
 .download {
   background: #393939;
   color: #fff;
+  padding: 130px 0px;
+  text-align: center;
+}
+
+.download__title {
+  font-size: 45px;
+}
+
+.download__windows {
+  margin: auto;
+  padding-left: 40px;
+  padding-top: 12px;
+  margin-top: 75px;
+  width: 391px;
+  border-radius: 10px;
+  background: #edeef0;
+  text-decoration: none;
+  color: #000;
+  font-size: 25px;
+  transition: all 0.5s;
+}
+
+.download__windows:hover {
+  background: #bcbdbe;
+}
+
+.download__windows-text {
+  margin-left: 19px;
+}
+
+.download__img {
+  width: 35px;
+  height: 36px;
+}
+
+.download__description {
+  margin-top: 22px;
+}
+
+.download__other {
+  position: relative;
+  cursor: pointer;
+  background: #585858;
+  border-radius: 10px;
+  width: 340px;
+  margin: auto;
+  margin-top: 45px;
+  padding-top: 10px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.download__other-text {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.download__angle {
+  position: absolute;
+  top: 5px;
+  right: -7px;
+}
+
+.download__more {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 340px;
+  background: #585858;
+  border-radius: 10px;
+  padding: 10px 0 !important;
+}
+
+.download__more-item:last-child {
+  border: none;
+}
+
+.download__more-item a {
+  justify-content: space-between;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 25px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.download__more-item a:hover {
+  background: #3b3b3b;
+  transition: all 0.5s;
+}
+
+.download__more-item img {
+  height: 23px;
+  margin-right: 9px;
+}
+
+.contacts {
+  background: #000;
+  color: #e5e5e7;
+  text-align: center;
+}
+
+.contacts__title {
+  margin-top: 60px;
+  font-size: 25px;
+}
+
+.contacts__links {
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.contacts__svg {
+  margin-right: 15px;
+}
+
+.contacts__svg:hover {
+  opacity: 0.75;
+  transition: all 0.5s;
+}
+
+.contacts__list {
+  margin-top: 50px !important;
+  padding-bottom: 10px !important;
+  justify-content: center;
+}
+
+.contacts__item {
+  font-size: 11px;
+  color: #8a8a8a;
+}
+
+.contacts__item a {
+  text-decoration: none;
+  color: #8a8a8a;
+}
+
+.contacts__item a:hover {
+  color: #e5e5e7;
+  transition: all 0.5s;
+}
+
+.contacts__item span {
+  margin: 0 8px;
 }
