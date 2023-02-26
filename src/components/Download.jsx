@@ -7,6 +7,19 @@ import Brackets from '../assets/brackets.svg';
 function Download() {
     const [open, setOpen] = React.useState(false);
     const downloads = [{img: Apple, name: 'macOS', size: '236MB'}, {img: Linux, name: 'Linux', size: '215MB'}, {img: Brackets, name: 'Source code', size: '51MB'}];
+    const dnldRef = React.useRef();
+
+    React.useEffect(() => {
+        const handleClickOutside = (event) => {
+          if (!event.path.includes(dnldRef.current)) {
+            setOpen(false);
+          }
+        };
+    
+        document.body.addEventListener('click', handleClickOutside);
+    
+        return () => document.body.removeEventListener('click', handleClickOutside);
+      }, []);
 
     return (
         <section className="download" id='download'>
@@ -19,7 +32,7 @@ function Download() {
                             <p className="download__windows-text">Скачать Grafit v1.1.0</p>
                         </a>
                         <p className="download__description">Windows  •  Installer  •  231MB</p>
-                        <div className="download__other" onClick={() => setOpen(!open)}>
+                        <div ref={dnldRef} className="download__other" onClick={() => setOpen(!open)}>
                             <p className="download__other-text">macOS, Linux, and other versions</p>
                             <svg className="download__angle" fill="#edeef0" width="64px" height="36px" viewBox="-8.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
                             <title>angle-down</title>
